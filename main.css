@@ -1,0 +1,37 @@
+/*Folha de Estilos para Lista de Exercícios de LPW*/
+
+body{
+	background: lightblue;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 18px;
+	
+}
+form{
+	margin: 0 auto;
+	width: 50%;
+	background: lightgrey;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 100px;
+
+}
+form input{
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left: 15px;
+	font-weight: bold;
+	padding: 9px;
+}
+
+
+li {
+	margin: 0;
+	padding: 16px 0 16px 64px;
+	list-style: none;
+	background-image: url("img/seta.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
