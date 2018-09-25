@@ -22,24 +22,18 @@
         }
        
     </script>
-    <?php
-        $i = 0;
-    ?>
+    
 </head>
 <body>
     <form method="post" action="ex19.php">
         <div id="origem" align="center">
             <fieldset>
                 Informe o nome: <input type="text" name="nome[]" required/><br>
-                <fieldset><legend>Sexo</legend>
-                    <?php
-                        echo "<input type='radio'  name='sexo[$i]' id='masc' value='Masculino'/>
-                        <label for='masc'>Masculino</label>
-                        <input type='radio'  name='sexo[$i]' id='fem' value='Feminino'/>
-                        <label for='fem'>Feminino</label>";
-                        $i++;
-                    ?>
-                </fieldset><br>
+                <select name="sexo[]">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+                <br><br>
                 <img  src="img/plus-flat.png" width="20px"  style="cursor: pointer;" onclick="duplicarCampos();">
             </fieldset><br>
             <!--<img  src="../img/cross.gif" style="cursor: pointer;" onclick="removerCampos(this);">-->
